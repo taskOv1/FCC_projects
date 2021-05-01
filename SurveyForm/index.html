@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">GamingWorld.net <br /> Survey Form</h1>
+            <p id="description" class="description text-center">Tell us about your gaming prefers</p>
+        </header>
+        <main class="main">
+            <form action="" id="survey-form">
+                <div class="survey-form__item">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <div class="survey-form__item">
+                    <label id="email-label" for="name">Email</label>
+                    <input 
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Ener your e-mail"
+                        required
+                    />
+                </div>
+                <div class="survey-form__item">
+                    <label id="number-label" for="number">Age</label>
+                    <input 
+                        type="number"
+                        name="age"
+                        id="number"
+                        class="form-control"
+                        min="13"
+                        max="105"
+                        placeholder="Enter your age"
+                        required
+                    />
+                </div>
+                <div class="survey-form__item">
+                    <p>Which game genre you prefer?</p>
+                    <select id="dropdown" class="form-control" name="ganre" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="rpg">RPG</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="horror">Horror</option>
+                        <option value="simulator">Simulator</option>
+                        <option value="platformer">Platformer</option>
+                        <option value="fps">FPS</option>
+                    </select>
+                </div>
+                <div class="survey-form__item">
+                    <p>What game mode you prefer</p>
+                    <label>
+                        <input 
+                            name="game-mode"
+                            value="single"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                        />Single-player</label>
+                    <label>
+                        <input 
+                            name="game-mode"
+                            value="multiplayer"
+                            type="radio"
+                            class="input-radio" 
+                        />Multi-player</label>
+                </div>
+                <div class="survey-form__item">
+                    <p>What games you already passed?</p>
+                    <label>
+                        <input 
+                            name="played"
+                            value="dark-souls"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Dark Souls series
+                    </label>
+                    <label>
+                        <input 
+                            name="played"
+                            value="gothic"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />
+                            Gothic series
+                    </label>
+                    <label>
+                    <input 
+                        name="played"
+                        value="kotor"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />
+                        Star Wars: Knights of the old republic series
+                    </label>
+                </div>
+                <div class="survey-form__item">
+                    <p>Any comments or suggestions?</p>
+                    <textarea 
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </div>
+                <div class="survey-form__item">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+    </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

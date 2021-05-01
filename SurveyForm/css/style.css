@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+html, body {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    color: #fff;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #000;
+    background-image: url(https://wallpaper.dog/large/17179229.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    margin: 3rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.124rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+/*
+78, 212, 219
+*/
+p {
+    font-size: 1.125rem;
+}
+
+form {
+    background-color: rgba(255, 171, 0, 0.8);
+    border-radius: 0.5rem;
+    padding: 2.5rem .0.625rem;
+    margin: 0 1rem;
+}
+@media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 95%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ff0700;
+    outline: 0;
+    border-width: 0.15rem;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+
+.header {
+    padding: 0 0.525rem;
+    margin-bottom: 1.875rem;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+.text-center {
+    text-align: center;
+}
+
+.survey-form__item {
+    margin: 0 1rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #1d7074;
+    color: inherit;
+    border-radius: 2px;
+    border: none;
+    margin-top: 0.75rem;
+    outline: 0;
+    cursor: pointer;
+}
